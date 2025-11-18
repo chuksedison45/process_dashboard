@@ -21,4 +21,5 @@ from cmp_process_dashboard import app
 application = app.server
 
 if __name__ == "__main__":
-    application.run()
+    port = int(os.environ.get("PORT", 8050))
+    application.run(host='0.0.0.0', port=port)
