@@ -1,2 +1,4 @@
 .DS_Sore
 .env
+__pycache__
+
