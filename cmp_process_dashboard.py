@@ -6,6 +6,7 @@ File: sample_cmp_process_dashboard.py
 PRODUCT: PyCharm
 PROJECT: NioWave
 """
+import os
 
 # Update your imports section at the top
 import dash
