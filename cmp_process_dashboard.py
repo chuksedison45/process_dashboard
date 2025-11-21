@@ -6,9 +6,8 @@ File: sample_cmp_process_dashboard.py
 PRODUCT: PyCharm
 PROJECT: NioWave
 """
+# Import the required Modules for the dashboard
 import os
-
-# Update your imports section at the top
 import dash
 from dash import dcc, html, Input, Output, callback, dash_table
 import dash_bootstrap_components as dbc  # ADD THIS LINE
@@ -1595,7 +1594,7 @@ def refresh_data(n_clicks, selected_tab, selected_param, confidence_level):
 
 @app.callback(
     [Output("defect-rate-metric", "children"),
-     Output("wafers-processed-metric", "children"),  # Add IDs for other metrics too
+     Output("wafers-processed-metric", "children"),
      Output("tools-active-metric", "children"),
      Output("lots-completed-metric", "children")],
     [Input('refresh-button', 'n_clicks')]
